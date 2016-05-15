@@ -1,0 +1,25 @@
+.daf {
+  width: 900px; }
+  .daf .daf-columns {
+    direction: rtl; }
+    .daf .daf-columns div {
+      text-align: justify;
+      font-size: 0.9em; }
+    .daf .daf-columns .highlightable {
+      display: inline-block; }
+    .daf .daf-columns .talmud {
+      font-family: David;
+      font-size: 1.1em;
+      width: 40%;
+      margin-top: 70px;
+      margin-right: 200px;
+      padding: 10px; }
+    .daf .daf-columns .rashi .commentary-opening, .daf .daf-columns .daf-columns .tosafot .commentary-opening {
+      font-weight: bold; }
+    .daf .daf-columns .commentary {
+      width: 50%;
+      display: inline; }
+  .daf .highlighted {
+    background-color: yellow; }
+
+/*# sourceMappingURL=daf-styles.css.map */

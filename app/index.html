@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<link rel='stylesheet' type="text/css" href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css' />
+<link rel='stylesheet' type="text/css" href='stylesheets/main.css' />
+
+</head>
+<body ng-app='gemaraBooster'>
+
+    <div ng-controller='MainCtrl'>
+        <nav>
+        </nav>
+
+        <div ng-controller='DafCtrl' class="daf center-block">
+            <div class="row daf-header">
+                <div class='pull-right'>ברכות ב:</div>
+            </div>
+
+            <div class="row daf-columns">
+                <div class="col-xs-1">
+                </div>
+                <div class="col-xs-10">
+                    <div class="highlightable rashi ">
+
+                        <div ng-repeat="r in rashi track by $index" ng-click='highlightText($index)' class="commentary">
+                            <div ng-bind-html='r | openingWords'></div>
+                        </div>
+                        <div class="highlightable talmud pull-right">
+                            <span ng-repeat='t in talmud track by $index' ng-click='highlightText($index)'>
+                                {{t}}
+                            </span>
+                        </div>
+                    </div>
+
+                    <!-- <div class="highlightable tosafot pull-right">
+                        <span ng-repeat="t in tosafot track by $index" ng-click='highlightText($index)'>
+                            <div ng-bind-html='t | openingWords'></div>
+                        </span>
+                    </div> -->
+                </div>
+                <div class="col-xs-1">
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+    <script src="vendor/jquery.js"></script>
+
+    <script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js'></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular-resource.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular-sanitize.js"></script>
+    <script src='scripts/app.js'></script>
+    <script src='scripts/controllers/main-ctrl.js'></script>
+    <script src='scripts/controllers/daf-ctrl.js'></script>
+    <script src='scripts/filters/commentary_filters.js'></script>
+</body>
+
+</html>

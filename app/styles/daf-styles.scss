@@ -1,0 +1,34 @@
+.daf{
+    width: 900px;
+    .daf-columns{
+        direction: rtl;
+             div{
+            text-align: justify;
+            font-size: 0.9em;
+        }
+        .highlightable{
+            display: inline-block;
+        }
+        .talmud{
+            font-family: David;
+            font-size: 1.1em;
+            width: 40%;
+            margin-top: 70px;
+            margin-right: 200px;
+            padding: 10px;
+        }
+        .rashi, .daf-columns .tosafot{
+            .commentary-opening{
+                font-weight: bold;
+            }
+
+        }
+        .commentary{
+            width: 50%;
+            display: inline;
+        }
+    }
+    .highlighted{
+        background-color: yellow;
+    }
+}
